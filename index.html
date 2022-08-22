@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="http://fonts.cdnfonts.com/css/blanch-condensed"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <div class="left-bar" id="left-bar"></div>
+    <div class="center" id="center">
+      <div class="header">
+        <div class="header-content">
+          <hr />
+          <div class="header-links">
+            <div class="header-left">
+              <div><a href="#menu">Menu</a></div>
+              <div><a href="#about">About Us</a></div>
+              <div><a href="">Schedule</a></div>
+            </div>
+            <div class="header-space">
+              <img class="logo" src="Images/logo.PNG" alt="" />
+            </div>
+            <div class="header-right">
+              <div><a href="#hours">Hours & Location</a></div>
+              <div><a href="#contact">Contact</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro-image"></div>
+      <div class="menus" id="menu">
+        <div class="title" id="menu-title">Menu</div>
+        <div>
+          <button class="drop" onclick="dropL()">
+            <div class="inside-button">
+              <div>Lunch and Dinner Menu</div>
+              <div><i class="fa fa-caret-down"></i></div>
+            </div>
+          </button>
+          <div id="contentL">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              width="640"
+              height="480"
+              src="https://drive.google.com/file/d/1OeRkV8tZM7huddKdb3ATJrVJVeBD8eOj/preview"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div>
+          <button class="drop" onclick="dropL()">
+            <div class="inside-button">
+              <div>Desserts</div>
+              <div><i class="fa fa-caret-down"></i></div>
+            </div>
+          </button>
+        </div>
+
+        <div>
+          <button class="drop" onclick="dropL()">
+            <div class="inside-button">
+              <div>Cocktails</div>
+              <div><i class="fa fa-caret-down"></i></div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+    
+
+      <div class="about" id="about">
+        <div class="about-content">
+          <div class="title" id="about-title">About</div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et libero porta, pretium nibh at, lobortis ligula. Proin porta justo et ornare ultrices. Aenean id finibus risus. Donec non nisi est. Donec ac ornare ex. Quisque id neque non eros luctus commodo. Vivamus nec nulla malesuada, eleifend mi ut, ornare eros. Ut diam lectus, ultrices in consequat ut, porta eget enim. Aenean vitae porta quam, fermentum venenatis elit. Nam eget suscipit mauris, at gravida nisi. Suspendisse est turpis, finibus sit amet mauris id, mattis finibus dolor. Duis eu metus risus. Ut nulla nisi, lacinia non nunc ac, lobortis porttitor eros. Ut condimentum erat sit amet tempor porta. Nam vestibulum mi vel nisl malesuada sodales.</div>
+        </div>
+        <div class="about-image-container"><img src="newImages/IMG_0106.JPEG" class="about-image"></img></div>
+      </div>
+
+      <div class="lh-section-container" id="hours">
+        <div class="lh-container">
+          <div class="location-hours">
+            <div class="location-hours-content">
+              <div class="location">
+                <div class="title">Location</div>
+                <div class="text">
+                  <a class="location-link"
+                  target="_blank"
+                  href="https://www.google.com/maps/place/439+Derby+Ave,+West+Haven,+CT+06516/@41.3075689,-72.9722871,17z/data=!3m1!4b1!4m5!3m4!1s0x89e7d8ddfa0177c5:0xb450961238e7879d!8m2!3d41.3075689!4d-72.9700931"
+                  >439 Derby Ave,<br />West Haven,<br />CT 06516</a
+                >
+                </div>
+              </div>
+              <div class="hours">
+                <div class="title">Hours</div>
+                <ul>
+                  <li>
+                    <div>Monday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Tuesday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Wednesday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Thursday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Friday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Saturday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                  <li>
+                    <div>Sunday</div>
+                    <div>0:00 AM to 0:00 PM</div>
+                  </li>
+                </ul>
+                <div class="text"></div>
+              </div>
+            </div>
+            <!-- <img src="newImages/IMG_0057.JPEG" class="location-image"></img> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="title">Contact Us</div>
+        <div class="contact-content">
+          <div>(555) 123-4567</div>
+          <img class="social-media" src="Images/f_logo_RGB-White_100.png" alt="">
+          <img class="social-media" src="Images/Instagram_Glyph_White.svg" alt="">
+        </div>
+      </div>
+      <hr class="alone">
+
+      <div class="footer">©Copywrite Pub 34 2022</div>
+
+    </div>
+
+    <div class="right-bar" id="right-bar"></div>
+  </body>
+</html>
