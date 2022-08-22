@@ -10,6 +10,8 @@
     --text_glow_scale: calc(.3vh + .3vw);
 }
 
+@import url(http://fonts.cdnfonts.com/css/blanch-condensed);
+
 html {
     scroll-behavior: smooth;
 }
