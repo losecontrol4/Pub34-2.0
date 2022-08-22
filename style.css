@@ -10,7 +10,12 @@
     --text_glow_scale: calc(.3vh + .3vw);
 }
 
-@import url(http://fonts.cdnfonts.com/css/blanch-condensed);
+@font-face {
+    font-family: 'Blanch Condensed';
+    font-style: normal;
+    font-weight: 440;
+    src: local('Blanch Condensed'), url('https://fonts.cdnfonts.com/s/13900/blanch_condensed-webfont.woff') format('woff');
+}
 
 html {
     scroll-behavior: smooth;
