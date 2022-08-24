@@ -33,7 +33,7 @@ function updateSideLights() {
   let margin = vh(imgMarginVH)//height * imgMarginVH
   let num = height/(imgHeight + margin) //number of lights that can fit
 
-  num = num % 1 < 0.2 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
+  num = num % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
   light.classList.add("sidelight")
   let childCount = left.children.length
   
