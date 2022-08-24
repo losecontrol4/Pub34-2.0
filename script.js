@@ -27,13 +27,13 @@ function updateSideLights() {
   let light =  document.createElement('img')
 
   light.src =  "Images/light.png"
-  let height = (document.getElementById("center")).clientHeight
+  let height = (document.getElementById("center")).clientHeight - (document.getElementById("footer")).clientHeight
   let imgWidth = vw(imgVW)
   let imgHeight = aspectRatio * imgWidth
   let margin = vh(imgMarginVH)//height * imgMarginVH
   let num = height/(imgHeight + margin) //number of lights that can fit
 
-  num = num % 1 < 0.5 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
+  num = num % 1 < 0.2 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
   light.classList.add("sidelight")
   let childCount = left.children.length
   
