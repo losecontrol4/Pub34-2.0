@@ -145,23 +145,25 @@ justify-content: right;
 
 .intro-image {
     align-self: center;
-    width: 60vw;
+    width: 70vw;
     height: auto;
     border: 1px solid rgb(217, 216, 216);
     border-radius: 2%;
     margin-top: 8vh;
-    margin-bottom: 25vh;
+    margin-bottom: 8vh;
     animation: whiteGlow 2.3s ease-in-out infinite;
     -webkit-animation: whiteGlow 2.3s ease-in-out infinite;
 }
 
 iframe {
+
     margin:0px;
     padding:0px;
     width: 100%;
     max-width: 825px;
     height: 0vh;
-    border: 0px solid #ccc;
+    border: 0px solid black;
+
     transition-duration: 1.2s;
     transition-timing-function: ease;
     /* background: transparent; */
@@ -177,12 +179,16 @@ iframe {
 
 #contentL{
     display: flex;
+    box-sizing: border-box;
+    width: 60vw;
     /* background-color: rgb(43, 42, 42); */
     /* background-image: url(Images/white-waves.webp); */
     background-image: url(Images/pink-curtain-with-stage-background-vector.webp);
     background-size: cover;
     padding: 0px;
     justify-content: center;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
     /* transition-duration: 2s;
     transition-timing-function: ease; */
 }
@@ -219,7 +225,7 @@ iframe {
 }
 
 button {
-    height: 3vh;
+    height: 4vh;
     border: none;
     padding: 0px;
     margin: 0px;
@@ -257,10 +263,15 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red;
+    
 }
 .about-image {
     width: 30vw;
+    border: 1px solid var(--accent_two);
+    border-radius: 2%;
+    animation: glow 1.5s ease-in-out infinite;
+    -webkit-animation: glow 1.5s ease-in-out infinite;
+
     
 }
 
@@ -271,7 +282,7 @@ hr {
 }
 
 .text {
-    
+    font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: calc(1vw + 1vh);
 }
 
@@ -408,10 +419,11 @@ ul {
 }
 
 .social-media {
-    height: 14vh;
+    width: 7vw;
 }
 
 .contact-content {
+    padding-top: 1vh;
      margin-left: 1vw;
     width: 80vw;
     display: flex;

@@ -1,14 +1,16 @@
 function dropL() {
     background = document.getElementById("contentL");
     iframe = background.firstChild.nextElementSibling;
-    console.log(iframe);
+   
 
     if (background.style.padding == "0px") {
       background.style.padding = "2vh 2vw";
       iframe.style.height = "90.0vh";
+      iframe.style.border = "2px solid black"
     } else {
       background.style.padding = "0px";
       iframe.style.height = "0vh";
+      iframe.style.border = "0px"
     }
 }
    
