@@ -62,6 +62,8 @@ function updateSideLights() {
 
 window.addEventListener('load', updateSideLights(), false);
 
+$(window).on('resize touchmove', updateSideLights());
+
 
 var addEvent = function(object, type, callback) {
   if (object == null || typeof(object) == 'undefined') return;
