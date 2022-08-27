@@ -41,20 +41,30 @@
           </div>
         </div>
       </div>
-      <img
-        src="newImages/IMG_0101.JPEG"
-        class="intro-image"
-        alt="Image of the inside of the pub"
-      />
+      <div class="intro">
+        <div class="intro-image-container">
+          <img
+            src="rotationImages/1.JPEG"
+            class="intro-image"
+            id="intro-image-1"
+            alt="Image of the inside of the pub"
+          />
+          <img
+            class="intro-image"
+            id="intro-image-2"
+            alt="Image of the inside of the pub"
+          />
+        </div>
+      </div>
       <div class="menus" id="menu">
         <div class="title" id="menu-title">Menu</div>
         <div>
-          <button class="drop" onclick="dropL()">
+          <div class="drop" onclick="dropL()">
             <div class="inside-button">
               <div>Lunch and Dinner Menu</div>
               <div><i class="fa fa-caret-down"></i></div>
             </div>
-          </button>
+          </div>
           <div id="contentL">
             <iframe
               width="640"
@@ -65,21 +75,21 @@
           </div>
         </div>
         <div>
-          <button class="drop" onclick="dropL()">
+          <div class="drop" onclick="dropL()">
             <div class="inside-button">
               <div>Desserts</div>
               <div><i class="fa fa-caret-down"></i></div>
             </div>
-          </button>
+          </div>
         </div>
 
         <div>
-          <button class="drop" onclick="dropL()">
+          <div class="drop" onclick="dropL()">
             <div class="inside-button">
               <div>Cocktails</div>
               <div><i class="fa fa-caret-down"></i></div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
 
@@ -87,12 +97,23 @@
         <div class="about-content">
           <div class="title" id="about-title">About</div>
           <div class="text">
-            PUB 34 is a retro, classic pub reminiscent of the best 1940’s Las
-            Vegas showrooms. Your hostesses, sisters Ginny and Dottie, hope to
-            invite you back in time with their grand piano bar, vibrant dance
-            floor, and featured live entertainment. With a fresh, made-to-order
-            menu filled with delicious dishes that evoke Old Hollywood, we aim
-            to make you feel like a star each time you visit.
+            At PUB 34– a retro, classic pub reminiscent of the best 1940’s Las
+            Vegas showrooms– we invite you to step back in time with us. Here,
+            you can watch live performances in our cabaret lounge, dance to your
+            heart’s content on our dance floor, and soak in some tunes played on
+            our luxury piano.
+            <br /><br />
+            Feel free to relax and enjoy a bite to eat or a refreshing cocktail
+            at our beautiful Pub bar, outside on our dining patio, or in our
+            upper level Palm Room.
+            <br /><br />
+            With a fresh, made-to-order menu filled with delicious, pubstyle
+            dishes that evoke the charm of Old Hollywood, we aim to make you
+            feel like a celebrity each time you visit.
+            <br /><br />
+            Please call for reservations and availability.
+            <br /><br />
+            OPENING SOON: PUTTIN’ ON THE GLITZ GIFT SHOPPE
           </div>
         </div>
         <div class="about-image-container">
@@ -122,34 +143,34 @@
               </div>
               <div class="hours">
                 <div class="title">Hours</div>
-                <ul>
+                <ul class="text">
                   <li>
                     <div>Monday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div class="closed">CLOSED</div>
                   </li>
                   <li>
                     <div>Tuesday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div class="closed">CLOSED</div>
                   </li>
                   <li>
                     <div>Wednesday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div>12:00 PM to&nbsp9:00 PM</div>
                   </li>
                   <li>
                     <div>Thursday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div>12:00 PM to 11:00 PM</div>
                   </li>
                   <li>
                     <div>Friday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div>12:00 PM to 12:00 AM</div>
                   </li>
                   <li>
                     <div>Saturday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div>12:00 PM to 12:00 AM</div>
                   </li>
                   <li>
                     <div>Sunday</div>
-                    <div>0:00 AM to 0:00 PM</div>
+                    <div>3:00 PM to 10:00 AM</div>
                   </li>
                 </ul>
                 <div class="text"></div>
@@ -162,8 +183,12 @@
 
       <div class="contact" id="contact">
         <div class="title">Contact Us</div>
-        <div class="contact-content">
-          <div><a href="tel:+1-203-859-5076">(203) 859-5076</a></div>
+        <div class="contact-content" class="text">
+          <div>
+            <a class="text" id="number" href="tel:+1-203-859-5076"
+              >(203) 859-5076</a
+            >
+          </div>
           <a target="_blank" href="https://www.facebook.com/pubthirtyfour/"
             ><img
               class="social-media"
@@ -180,7 +205,7 @@
       </div>
       <hr class="alone" />
 
-      <div class="footer" id="footer">© Pub Thirty Four 2022</div>
+      <div class="footer" class="text" id="footer">© Pub Thirty Four 2022</div>
     </div>
 
     <div class="right-bar" id="right-bar"></div>
