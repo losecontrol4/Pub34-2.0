@@ -59,13 +59,12 @@
       <div class="menus" id="menu">
         <div class="title" id="menu-title">Menu</div>
         <div>
-          <div class="drop" onclick="dropL()">
-            <div class="inside-button">
-              <div>Lunch and Dinner Menu</div>
-              <div><i class="fa fa-caret-down"></i></div>
-            </div>
+          <div class="drop" onclick="drop(0)">
+            <div></div>
+            <div>Lunch and Dinner Menu</div>
+            <div><i class="fa fa-caret-down"></i></div>
           </div>
-          <div id="contentL">
+          <div id="contentL" class="content-drop">
             <iframe
               width="640"
               height="480"
@@ -75,21 +74,36 @@
           </div>
         </div>
         <div>
-          <div class="drop" onclick="dropL()">
-            <div class="inside-button">
-              <div>Desserts</div>
-              <div><i class="fa fa-caret-down"></i></div>
-            </div>
+          <div class="drop" onclick="drop(1)">
+            <div></div>
+            <div>Desserts</div>
+            <div><i class="fa fa-caret-down"></i></div>
+          </div>
+
+          <div id="contentD" class="content-drop">
+            <iframe
+              width="640"
+              height="480"
+              src="https://drive.google.com/file/d/1OeRkV8tZM7huddKdb3ATJrVJVeBD8eOj/preview"
+            >
+            </iframe>
           </div>
         </div>
 
         <div>
-          <div class="drop" onclick="dropL()">
-            <div class="inside-button">
-              <div>Cocktails</div>
-              <div><i class="fa fa-caret-down"></i></div>
-            </div>
+          <div class="drop" onclick="drop(2)">
+            <div></div>
+            <div>Cocktails</div>
+            <div><i class="fa fa-caret-down"></i></div>
           </div>
+        </div>
+        <div id="contentC" class="content-drop">
+          <iframe
+            width="640"
+            height="480"
+            src="https://drive.google.com/file/d/1OeRkV8tZM7huddKdb3ATJrVJVeBD8eOj/preview"
+          >
+          </iframe>
         </div>
       </div>
 

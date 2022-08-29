@@ -1,13 +1,24 @@
-function prepareRotate() { //sets the values to be viewable inline
+function prepare() { //sets the values to be viewable inline
   let imageOne = document.getElementById("intro-image-1")
   let imageTwo = document.getElementById("intro-image-2")
- 
+
+
+  initializeDrop(document.getElementById("contentL"))
+  initializeDrop(document.getElementById("contentD"))
+  initializeDrop(document.getElementById("contentC"))
 
   imageOne.style.opacity = "100%"
   imageOne.style.content = "url(rotationImages/1.JPEG)"
   imageTwo.style.opacity = "0%"
   imageTwo.style.content = "url(rotationImages/2.JPEG)"
-  console.log(imageOne.style.content.split("/"))
+
+}
+
+function initializeDrop(background) {
+  let iframe = background.firstChild.nextElementSibling;
+  background.style.padding = "0px";
+  iframe.style.height = "0vh";
+  iframe.style.border = "0px"
 }
 
 function rotateImages() {
@@ -40,8 +51,7 @@ function changeImages() { //to be called when rotateImages' transition ends
     imageOne.style.content = "url(" + createPath(next) + ")"
   }
 
-  console.log(imageOne.src)
-  console.log(imageTwo.src)
+
 }
 
 function createPath(number) {
@@ -49,27 +59,75 @@ function createPath(number) {
 }
 
 
-function dropL() {
-    let background = document.getElementById("contentL");
-    let iframe = background.firstChild.nextElementSibling;
-   
-
+function drop(num) {
+  
+    let background = null
+    let iframe = null
+    if(num == 0) {
+      background = document.getElementById("contentL");
+      iframe = background.firstChild.nextElementSibling;
+    } else if (num == 1) {
+      background = document.getElementById("contentD");
+      iframe = background.firstChild.nextElementSibling;
+    } else {
+      background = document.getElementById("contentC");
+      iframe = background.firstChild.nextElementSibling;
+    }
     if (background.style.padding == "0px") {
       background.style.padding = "2vh 2vw";
       iframe.style.height = "90.0vh";
       iframe.style.border = "2px solid black"
+      adjustSideLights(vh(92), true)
     } else {
       background.style.padding = "0px";
       iframe.style.height = "0vh";
       iframe.style.border = "0px"
+      adjustSideLights(vh(92), false)
     }
+
+    
 
 
 }
+
+function adjustSideLights (height, add) {
+  //for use with menu drop functions
+  let imgVW = 6
+  let imgMarginVH = 5
+  //
+
+  let aspectRatio = 0.9617834394904459 //hard coded to avoid having to wait for image to load to do calculations.
+
+  let left = document.getElementById("left-bar")
+  let right = document.getElementById("right-bar")
+  let light =  document.createElement('img')
+
+  light.src =  "Images/light.png"
+  let imgWidth = vw(imgVW)
+  let imgHeight = aspectRatio * imgWidth
+  let margin = vh(imgMarginVH)//height * imgMarginVH
+  let num = (height - vh(1))/(imgHeight + margin) //number of lights that can fit
+
+  num = (num + .3) % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
+  light.classList.add("sidelight")
+  if (add) {
+    for (let i = 0; i < num; i++) {
+      left.appendChild(light.cloneNode(true))
+      right.appendChild(light.cloneNode(true))
+    }
+  } else
+  for (let i = 0; i < num; i++) {
+    left.removeChild(left.lastElementChild)
+    right.removeChild(right.lastElementChild) 
+  }
+}
+
+
    
 function updateSideLights() {
 
- 
+   
+
   // hard coded due to difficulty obtaining these values from the style sheet
   let imgVW = 6
   let imgMarginVH = 5
@@ -109,9 +167,11 @@ function updateSideLights() {
 
   }
 
+ 
+
 
 window.addEventListener('load', updateSideLights(), false);
-window.addEventListener('load', prepareRotate(), false);
+window.addEventListener('load', prepare(), false);
 
 // window.setInterval(updateSideLights(), 10000);
 
@@ -142,7 +202,7 @@ function vw(v) {
 
 addEvent(window, "resize", updateSideLights);
 
-document.getElementById("contentL").addEventListener("transitionend", updateSideLights)
+// document.getElementById("contentL").addEventListener("transitionend", updateSideLights)
 
 document.getElementById("intro-image-1").addEventListener("transitionend", changeImages)
 

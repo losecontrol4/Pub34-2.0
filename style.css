@@ -129,8 +129,8 @@ justify-content: right;
 .logo {
     width: 12vw;
     height: auto;
-    margin-top: -44%;
-    margin-right: -1.3vw;
+    left: 0.55vw; 
+    top: calc(-60% + 2vw);
     z-index: 10;
     position: relative;
   
@@ -159,6 +159,7 @@ justify-content: right;
     left: 0;
     align-self: center;
     width: 65vw;
+  
     height: auto;
     content: url(rotationImages/1.JPEG);
     border: 1px solid rgb(217, 216, 216);
@@ -191,9 +192,8 @@ iframe {
     max-width: 825px;
     height: 0vh;
     border: 0px solid black;
-
-    transition-duration: 1.2s;
-    transition-timing-function: ease;
+    
+    transition: height 1.2s ease;
     /* background: transparent; */
 }
 
@@ -205,7 +205,7 @@ iframe {
    
 }
 
-#contentL{
+.content-drop{
     display: flex;
     box-sizing: border-box;
     width: 60vw;
@@ -215,8 +215,9 @@ iframe {
     background-size: cover;
     padding: 0px;
     justify-content: center;
-    transition-duration: 1.2s;
-    transition-timing-function: ease;
+    transition: height 1.2s ease;
+    transition: padding 1.2s ease;
+  
     /* transition-duration: 2s;
     transition-timing-function: ease; */
 }
@@ -235,31 +236,25 @@ iframe {
   font-family: 'Blanch Condensed', sans-serif;        
 }
 
-.inside-button {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1.5vw;
-    padding-right: .5vw;
-}
 
 
-.dropL {
-        display: none;
 
-        min-width: 160px;
-        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-
-      
-}
 
 .drop {
-    height: 4vh;
+    box-sizing: border-box;
+    height: 6vh;
     border: none;
     padding: 0px;
     margin: 0px;
     background-color: var(--primary);
     color: #000000;
     width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5vw;
+    padding-right: .5vw;
+    font-size: larger;
 }
 
 
@@ -280,7 +275,7 @@ hr {
   
 .about {
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     gap: 5vw;
     padding: 8vh 2.5vw;
@@ -294,7 +289,7 @@ hr {
     
 }
 .about-image {
-    width: 40vw;
+    width: 70vw;
     border: 1px solid var(--accent_two);
     border-radius: 2%;
     animation: glow 1.5s ease-in-out infinite;
@@ -304,7 +299,7 @@ hr {
 }
 
 .about-content {
-    width: 30vw;
+    width: 70vw;
     color: white;
     /* text-shadow: 0.5px 0.5px 0.4px var(--primary); */
 }
@@ -569,3 +564,15 @@ ul {
   }
 
 
+  @media only screen and (max-width: 600px) {
+    .drop {
+     width: 75vw;
+ }
+    .content-drop{
+        width: 75vw;
+    }
+
+    .logo {
+        top: calc(-65% + 2vw);
+    }
+  }
