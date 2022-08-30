@@ -31,6 +31,7 @@ html, body {
 }
 
 
+
 body {
     overflow: hidden;
 
@@ -45,6 +46,8 @@ body {
 
  
 }
+
+
 
 /* * {
     border: solid red;
@@ -205,6 +208,8 @@ iframe {
    
 }
 
+
+
 .content-drop{
     display: flex;
     box-sizing: border-box;
@@ -255,6 +260,11 @@ iframe {
     padding-left: 1.5vw;
     padding-right: .5vw;
     font-size: larger;
+}
+
+.carrot {
+ height: 2vh;   
+ width: auto;
 }
 
 
@@ -310,11 +320,6 @@ hr {
 }
 
 
-
-
-.location-image {
-    height: 15vh;
-}
 
 .alone::before {
     margin: -2px 21.5%;
