@@ -55,7 +55,7 @@ function changeImages() { //to be called when rotateImages' transition ends
 }
 
 function createPath(number) {
-  return "rotationImages/" + number + ".JPEG" 
+  return "rotationImages/" + number + ".JPEG" + "testBreak" 
 }
 
 
@@ -111,9 +111,9 @@ function adjustSideLights (height, add) {
 
   num = (num + .3) % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
 
-  light.style.height = imgHeight
-  light.style.width = vw(imgVW)
-  light.style.marginBottom = vh(imgMarginVH)
+  // light.style.height = imgHeight
+  // light.style.width = vw(imgVW)
+  // light.style.marginBottom = vh(imgMarginVH)
   light.classList.add("sidelight")
 
 
@@ -154,10 +154,10 @@ function updateSideLights() {
   let num = (height - vh(1))/(imgHeight + margin) //number of lights that can fit
 
   num = num % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
-
-  light.style.height = imgHeight
-  light.style.width = vw(imgVW)
-  light.style.marginBottom = vh(imgMarginVH)
+  
+  // light.style.height = imgHeight
+  // light.style.width = vw(imgVW)
+  // light.style.marginBottom = vh(imgMarginVH)
   light.classList.add("sidelight")
 
   let childCount = left.children.length

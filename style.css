@@ -153,11 +153,14 @@ justify-content: right;
     position: relative;
     top: 0;
     left: 0;
+    width: 65vw;
+    height: 48.75vw;
    
 }
 
 .intro-image {
     /* 4 by 3 */
+
     top: 0;
     left: 0;
     align-self: center;
@@ -515,7 +518,7 @@ ul {
 
     display: block;
     width: 6vw;
-    height: auto;
+    height: 5.77vw;
     margin-bottom: 5vh;
     padding: 0px;
 }
