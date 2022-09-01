@@ -55,7 +55,7 @@ function changeImages() { //to be called when rotateImages' transition ends
 }
 
 function createPath(number) {
-  return "rotationImages/" + number + ".JPEG" + "testBreak" 
+  return "rotationImages/" + number + ".JPEG"
 }
 
 
