@@ -105,11 +105,18 @@ function adjustSideLights (height, add) {
   light.src =  "Images/light.png"
   let imgWidth = vw(imgVW)
   let imgHeight = aspectRatio * imgWidth
+  
   let margin = vh(imgMarginVH)//height * imgMarginVH
   let num = (height - vh(1))/(imgHeight + margin) //number of lights that can fit
 
   num = (num + .3) % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
+
+  light.style.height = imgHeight
+  light.style.width = vw(imgVW)
+  light.style.marginBottom = vh(imgMarginVH)
   light.classList.add("sidelight")
+
+
   if (add) {
     for (let i = 0; i < num; i++) {
       left.appendChild(light.cloneNode(true))
@@ -147,7 +154,12 @@ function updateSideLights() {
   let num = (height - vh(1))/(imgHeight + margin) //number of lights that can fit
 
   num = num % 1 < 0 ? Math.floor(num) : Math.ceil(num) //if decimal place below the value, round down, else round up
+
+  light.style.height = imgHeight
+  light.style.width = vw(imgVW)
+  light.style.marginBottom = vh(imgMarginVH)
   light.classList.add("sidelight")
+
   let childCount = left.children.length
   
 

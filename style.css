@@ -144,7 +144,6 @@ justify-content: right;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8vh;
     margin-bottom: 8vh;
 }
 
@@ -158,11 +157,12 @@ justify-content: right;
 }
 
 .intro-image {
+    /* 4 by 3 */
     top: 0;
     left: 0;
     align-self: center;
     width: 65vw;
-  
+    height: 48.75vw;
     height: auto;
     content: url(rotationImages/1.JPEG);
     border: 1px solid rgb(217, 216, 216);
@@ -299,7 +299,9 @@ hr {
     
 }
 .about-image {
+    /* 3 by 2 */
     width: 70vw;
+    height: 46.67vw;
     border: 1px solid var(--accent_two);
     border-radius: 2%;
     animation: glow 1.5s ease-in-out infinite;
