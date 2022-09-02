@@ -155,6 +155,7 @@ justify-content: right;
     left: 0;
     width: 65vw;
     height: 48.75vw;
+    margin-top: -6vh;
    
 }
 
@@ -290,7 +291,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5vw;
+    align-items: center;
+    gap: 3vw;
     padding: 8vh 2.5vw;
     padding-bottom: 0vh;
 }
@@ -316,6 +318,9 @@ hr {
 .about-content {
     width: 70vw;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
     /* text-shadow: 0.5px 0.5px 0.4px var(--primary); */
 }
 
@@ -527,6 +532,12 @@ ul {
 
 
 @keyframes whiteGlow {
+    0%{box-shadow: 0 0 var(--glow_scale) #fff;}
+    50%{box-shadow: 0 0 calc(var(--glow_scale)*4) #fff;}
+    100%{box-shadow: 0 0 var(--glow_scale) #fff;}
+  }
+
+  @-webkit-keyframes whiteGlow {
     0%{box-shadow: 0 0 var(--glow_scale) #fff;}
     50%{box-shadow: 0 0 calc(var(--glow_scale)*4) #fff;}
     100%{box-shadow: 0 0 var(--glow_scale) #fff;}
