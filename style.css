@@ -303,6 +303,8 @@ hr {
     border-radius: 5px;
     box-shadow: 0 0 5px var(--accent_one);
     padding: 0;
+    /* animation: glow 1.5s ease-in-out infinite;
+    -webkit-animation: glow 1.5s ease-in-out infinite; */
     animation: glow 1.5s ease-in-out infinite;
     -webkit-animation: glow 1.5s ease-in-out infinite;
   }
@@ -328,8 +330,8 @@ hr {
 }
 .about-image {
     /* 3 by 2 */
-    width: 70vw;
-    height: 46.67vw;
+    width: 65vw;
+    /* height: 46.67vw; */
     border: 1px solid var(--accent_two);
     border-radius: 2%;
     animation: glow 1.5s ease-in-out infinite;
@@ -490,8 +492,8 @@ ul {
 .contact-content {
     margin-top: 7vh;
     padding-top: 1vh;
-     margin-left: 2vw;
-     margin-right: 3.5vw;
+     /* padding-left: 2vw;
+     padding-right: 3.5vw; */
     width: 80vw;
     display: flex;
     align-items: center;
