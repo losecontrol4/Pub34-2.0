@@ -1,0 +1,20 @@
+body {
+    color: black;
+    display: flex;
+    /* background-image: url(Images/pink-curtain-with-stage-background-vector.webp); */
+
+    flex-direction: column;
+    gap: 3vh;
+    overscroll-behavior: none;
+    align-items: center;
+    background-size: cover;
+
+
+}
+
+img {
+    height: auto;
+    width: 95vw;
+    box-shadow: 8px 5px 5px rgb(0, 0, 0);
+    border: solid;
+}

@@ -221,7 +221,7 @@ iframe {
     width: 100%;
     max-width: 825px;
     height: 0vh;
-    border: 0px solid black;
+    /* border: 0px solid black; */
     
     transition: height 1.2s ease;
     /* background: transparent; */
