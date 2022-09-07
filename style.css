@@ -494,10 +494,17 @@ ul {
     padding-top: 1vh;
      /* padding-left: 2vw;
      padding-right: 3.5vw; */
-    width: 70vw;
+     margin-left: 1vw;
+    width: 77vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 23vw;
 }
 
 .footer {
@@ -552,7 +559,7 @@ ul {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    
+    font-family: Arial, Arial, Helvetica, sans-serif;
     
    
     color: #fff;
@@ -565,7 +572,7 @@ ul {
     z-index: 1;
     opacity: 0;
     transition: opacity 1s;
-    font-size: 20px;
+    font-size: 16px;
     bottom: 110%;
     left: 50%;
     margin-left: -60px;
