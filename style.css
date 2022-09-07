@@ -124,7 +124,7 @@ justify-content: right;
 
 .header {
     position: relative;
-    padding-top: 6vh;
+    padding-top: calc(3vh + 3vw);
     width: 80vw;
 }
 
@@ -256,7 +256,7 @@ iframe {
 
 #menu-title {
     text-align: center;
-    
+    margin-bottom: 1vh;
 }
 
 .title {
@@ -539,7 +539,7 @@ ul {
 }
 
 .lh-section-container {
-    padding-top: 8vh;
+    padding-top: 15vh;
 }
 
 .sidelight {
@@ -589,7 +589,14 @@ ul {
   }
 
 
-
+  .sinatra {
+    width: 20vw;
+    height: auto;
+    border-radius: 30%;
+    position: absolute;
+    left: calc(50% - 10vw);
+    
+  }
 
 @keyframes whiteGlow {
     0%{box-shadow: 0 0 var(--glow_scale) #fff;}
