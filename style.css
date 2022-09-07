@@ -222,7 +222,7 @@ iframe {
     max-width: 825px;
     height: 0vh;
     /* border: 0px solid black; */
-    
+   
     transition: height 1.2s ease;
     /* background: transparent; */
 }
@@ -543,6 +543,43 @@ ul {
     margin-bottom: 5vh;
     padding: 0px;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    
+    
+   
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* border: solid white; */
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 20px;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+   
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 
 
