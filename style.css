@@ -494,17 +494,10 @@ ul {
     padding-top: 1vh;
      /* padding-left: 2vw;
      padding-right: 3.5vw; */
-    width: 80vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#number{
-    font-size: calc(2vw + 1vh);
-    color: white;
-    text-decoration:none;
-
 }
 
 .footer {
@@ -636,5 +629,9 @@ ul {
 
     .intro-image-container {
         margin-top: -1vw;
+    }
+
+    .about-content {
+        font-size: calc(.8em + 1vw);
     }
   }
