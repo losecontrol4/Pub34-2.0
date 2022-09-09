@@ -43,18 +43,41 @@
       document
         .getElementById("body")
         .addEventListener("touchend", function (event) {
+          // for double tap on mobile
           let currentTime = new Date().getTime();
           let tapLength = currentTime - lastTap;
           clearTimeout(timeout);
           if (tapLength < 500 && tapLength > 0) {
-            openNewTab();
             event.preventDefault();
+            openNewTab();
           } else {
             timeout = setTimeout(function () {
               clearTimeout(timeout);
             }, 500);
           }
           lastTap = currentTime;
+        });
+
+      let press = 0;
+      let release = 0;
+
+      document
+        .getElementById("body")
+        .addEventListener("touchstart", function (event) {
+          //for long tap on mobile
+          press = new Date().getTime();
+        });
+
+      document
+        .getElementById("body")
+        .addEventListener("touchend", function (event) {
+          //for long tap on mobile
+          release = new Date().getTime();
+          if (release - press > 350) {
+            event.preventDefault();
+            openNewTab();
+          }
+          console.log(release - press);
         });
     </script>
   </body>
