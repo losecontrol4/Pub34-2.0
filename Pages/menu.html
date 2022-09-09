@@ -9,7 +9,7 @@
     <link rel="icon" href="../images/logo.PNG" />
     <link rel="stylesheet" href="../menu_style.css" />
   </head>
-  <body>
+  <body ondblclick="openNewTab()" id="body">
     <img
       src="../Images/Pub34MenuImages/Pub34MenuFINAL-1.jpg"
       alt="menu page 1"
@@ -22,5 +22,34 @@
       src="../Images/Pub34MenuImages/Pub34MenuFINAL-3.jpg"
       alt="menu page 3"
     />
+
+    <script>
+      function openNewTab() {
+        //opens this page in a new tab (to be triggered on double) if it is being display in an iframe.
+        if (window.location !== window.parent.location) {
+          window.open("menu.html", "_blank");
+        }
+      }
+
+      let timeout;
+      let lastTap = 0;
+
+      document
+        .getElementById("body")
+        .addEventListener("touchend", function (event) {
+          let currentTime = new Date().getTime();
+          let tapLength = currentTime - lastTap;
+          clearTimeout(timeout);
+          if (tapLength < 500 && tapLength > 0) {
+            openNewTab();
+            event.preventDefault();
+          } else {
+            timeout = setTimeout(function () {
+              clearTimeout(timeout);
+            }, 500);
+          }
+          lastTap = currentTime;
+        });
+    </script>
   </body>
 </html>

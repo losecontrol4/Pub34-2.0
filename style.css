@@ -589,14 +589,6 @@ ul {
   }
 
 
-  .sinatra {
-    width: 20vw;
-    height: auto;
-    border-radius: 30%;
-    position: absolute;
-    left: calc(50% - 10vw);
-    
-  }
 
 @keyframes whiteGlow {
     0%{box-shadow: 0 0 var(--glow_scale) #fff;}

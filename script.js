@@ -74,8 +74,8 @@ function drop(num) {
       iframe = background.firstChild.nextElementSibling;
     }
     if (background.style.padding == "0px") {
-      background.style.padding = "2vh 2vw";
-      iframe.style.height = "90.0vh";
+      background.style.padding = "1.2vw 1.2vw";
+      iframe.style.height = "70.0vh";
       iframe.style.border = "2px solid black"
       adjustSideLights(vh(92), true)
     } else {
