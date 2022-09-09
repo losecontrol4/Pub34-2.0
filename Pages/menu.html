@@ -58,27 +58,28 @@
           lastTap = currentTime;
         });
 
-      let press = 0;
-      let release = 0;
+      //   let press = 0;
+      //   let release = 0;
 
       document
         .getElementById("body")
         .addEventListener("touchstart", function (event) {
           //for long tap on mobile
-          press = new Date().getTime();
+          //   press = new Date().getTime();
+          openNewTab();
         });
 
-      document
-        .getElementById("body")
-        .addEventListener("touchend", function (event) {
-          //for long tap on mobile
-          release = new Date().getTime();
-          if (release - press > 50) {
-            event.preventDefault();
-            openNewTab();
-          }
-          console.log(release - press);
-        });
+      //   document
+      //     .getElementById("body")
+      //     .addEventListener("touchend", function (event) {
+      //       //for long tap on mobile
+      //       release = new Date().getTime();
+      //       if (release - press > 50) {
+      //         event.preventDefault();
+      //         openNewTab();
+      //       }
+      //       console.log(release - press);
+      //     });
     </script>
   </body>
 </html>
