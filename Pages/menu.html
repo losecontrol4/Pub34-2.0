@@ -63,23 +63,22 @@
 
       document
         .getElementById("body")
-        .addEventListener("touchend", function (event) {
-          //for long tap on mobile
-          //   press = new Date().getTime();
-          openNewTab();
+        .addEventListener("touchstart", function (event) {
+          //for tap on mobile
+          press = new Date().getTime();
         });
 
-      //   document
-      //     .getElementById("body")
-      //     .addEventListener("touchend", function (event) {
-      //       //for long tap on mobile
-      //       release = new Date().getTime();
-      //       if (release - press > 50) {
-      //         event.preventDefault();
-      //         openNewTab();
-      //       }
-      //       console.log(release - press);
-      //     });
+      document
+        .getElementById("body")
+        .addEventListener("touchend", function (event) {
+          //for long tap on mobile
+          release = new Date().getTime();
+          if (release - press > 50) {
+            event.preventDefault();
+            openNewTab();
+          }
+          console.log(release - press);
+        });
     </script>
   </body>
 </html>

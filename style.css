@@ -226,6 +226,7 @@ iframe {
     transition: height 1.2s ease;
     /* background: transparent; */
     overflow-x:hidden;
+    overscroll-behavior-x: none;
 }
 
 .menus {
