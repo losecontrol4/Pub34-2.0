@@ -34,22 +34,22 @@
       let timeout;
       let lastTap = 0;
 
-      document
-        .getElementById("body")
-        .addEventListener("touchend", function (event) {
-          let currentTime = new Date().getTime();
-          let tapLength = currentTime - lastTap;
-          clearTimeout(timeout);
-          if (tapLength < 500 && tapLength > 0) {
-            openNewTab();
-            event.preventDefault();
-          } else {
-            timeout = setTimeout(function () {
-              clearTimeout(timeout);
-            }, 500);
-          }
-          lastTap = currentTime;
-        });
+      //   document
+      //     .getElementById("body")
+      //     .addEventListener("touchend", function (event) {
+      //       let currentTime = new Date().getTime();
+      //       let tapLength = currentTime - lastTap;
+      //       clearTimeout(timeout);
+      //       if (tapLength < 500 && tapLength > 0) {
+      //         openNewTab();
+      //         event.preventDefault();
+      //       } else {
+      //         timeout = setTimeout(function () {
+      //           clearTimeout(timeout);
+      //         }, 500);
+      //       }
+      //       lastTap = currentTime;
+      //     });
     </script>
   </body>
 </html>
