@@ -226,7 +226,14 @@ iframe {
     transition: height 1.2s ease;
     /* background: transparent; */
     overflow-x:hidden;
-    overscroll-behavior-x: none;
+    
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+   
 }
 
 .menus {
