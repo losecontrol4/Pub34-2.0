@@ -8,6 +8,7 @@ body {
     gap: 3vh;
     overscroll-behavior: none;
     align-items: center;
+    overflow-x: hidden;
   
 
 
