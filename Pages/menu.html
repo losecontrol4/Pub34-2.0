@@ -29,7 +29,7 @@
         //opens this page in a new tab (to be triggered on double) if it is being display in an iframe.
         if (window.location !== window.parent.location) {
           let curr = new Date().getTime(); //some devices like iphone will call this function with both methods, therefore this prevents the function from being called twice
-          let lastCallLength = lastCall - curr;
+          let lastCallLength = curr - lastCall;
           if (lastCallLength > 200 || lastCall == 0) {
             window.open("menu.html", "_blank");
           }
