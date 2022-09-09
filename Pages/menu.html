@@ -73,7 +73,7 @@
         .addEventListener("touchend", function (event) {
           //for long tap on mobile
           release = new Date().getTime();
-          if (release - press > 200) {
+          if (release - press > 100) {
             event.preventDefault();
             openNewTab();
           }
