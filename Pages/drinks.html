@@ -10,18 +10,7 @@
     <link rel="stylesheet" href="../menu_style.css" />
   </head>
   <body ondblclick="openNewTab()" id="body">
-    <img
-      src="../Images/Pub34MenuImages/Pub34MenuFINAL-1.jpg"
-      alt="menu page 1"
-    />
-    <img
-      src="../Images/Pub34MenuImages/Pub34MenuFINAL-2.jpg"
-      alt="menu page 2"
-    />
-    <img
-      src="../Images/Pub34MenuImages/Pub34MenuFINAL-3.jpg"
-      alt="menu page 3"
-    />
+    <img src="../Images/Menus/drinks.jpg" alt="menu page 1" />
 
     <script>
       let lastCall = 0;
@@ -31,32 +20,11 @@
           let curr = new Date().getTime(); //some devices like iphone will call this function with both methods, therefore this prevents the function from being called twice
           let lastCallLength = curr - lastCall;
           if (lastCallLength > 200 || lastCall == 0) {
-            window.open("menu.html", "_blank");
+            window.open("drinks.html", "_blank");
           }
           lastCall = curr;
         }
       }
-
-      //   let timeout;
-      //   let lastTap = 0;
-
-      //   document
-      //     .getElementById("body")
-      //     .addEventListener("touchend", function (event) {
-      //       // for double tap on mobile
-      //       let currentTime = new Date().getTime();
-      //       let tapLength = currentTime - lastTap;
-      //       clearTimeout(timeout);
-      //       if (tapLength < 500 && tapLength > 0) {
-      //         event.preventDefault();
-      //         openNewTab();
-      //       } else {
-      //         timeout = setTimeout(function () {
-      //           clearTimeout(timeout);
-      //         }, 500);
-      //       }
-      //       lastTap = currentTime;
-      //     });
 
       let press = 0;
       let release = 0;

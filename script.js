@@ -77,12 +77,12 @@ function drop(num) {
       background.style.padding = "1.2vw 1.2vw";
       iframe.style.height = "70.0vh";
       iframe.style.border = "2px solid black"
-      adjustSideLights(vh(92), true)
+      adjustSideLights((vh(70) + vw(1.2)), true)
     } else {
       background.style.padding = "0px";
       iframe.style.height = "0vh";
       iframe.style.border = "0px"
-      adjustSideLights(vh(92), false)
+      adjustSideLights((vh(70) + vw(1.2)), false)
     }
 
     
@@ -130,6 +130,20 @@ function adjustSideLights (height, add) {
 }
 
 
+function checkSideLights() {
+  let left = document.getElementById("left-bar").childElementCount
+  left = left * (vh(10.77)) //element amount times margin plus height of each light
+  let height = (document.getElementById("center")).clientHeight - (document.getElementById("footer")).clientHeight
+  console.log(1)
+  console.log(height + height * .03)
+  console.log(left)
+  console.log(2)
+  console.log(left + .03 * left)
+  console.log(height)
+  if(height + height * .03 < left || left + left * .03 < height) {
+    updateSideLights()
+  }
+}
    
 function updateSideLights() {
 
@@ -219,3 +233,5 @@ addEvent(window, "resize", updateSideLights);
 document.getElementById("intro-image-1").addEventListener("transitionend", changeImages)
 
 setInterval(rotateImages, 5000)
+
+setInterval(checkSideLights, 2000)
