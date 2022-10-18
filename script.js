@@ -1,3 +1,16 @@
+function mobileDrop() {
+  let dropIcon = document.getElementById("mobile-icon")
+  let drop = document.getElementById("mobile-drop")
+  if (drop.style.display == "flex") {
+    drop.style.display = "none"
+    dropIcon.style.content ="url(Images/drop-down-menu.svg)"
+  } else {
+    drop.style.display = "flex"
+    dropIcon.style.content = "url(Images/drop-down-x.svg)"
+  }
+}
+
+
 function prepare() { //sets the values to be viewable inline
   let imageOne = document.getElementById("intro-image-1")
   let imageTwo = document.getElementById("intro-image-2")
