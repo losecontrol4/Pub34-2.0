@@ -433,7 +433,7 @@ hr {
     align-items: center;
     gap: 1vh;
     font-size: calc(1rem + 1vw);
-    text-align: left;
+    text-align: center;
     /* text-shadow: 0.5px 0.5px 0.4px var(--primary); */
 }
 
