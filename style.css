@@ -270,7 +270,7 @@ hr {
     width: 65vw;
     height: 48.75vw;
     height: auto;
-    content: url(rotationImages/1.JPEG);
+    content: url(rotationImages/1.webp);
     border: 1px solid rgb(217, 216, 216);
     border-radius: 2%;
     animation: whiteGlow 2.5s ease-in-out infinite;
@@ -290,7 +290,7 @@ hr {
   opacity: 0%;
   position: absolute;
   
-  content: url(rotationImages/2.JPEG);
+  content: url(rotationImages/2.webp);
 }
 
 
