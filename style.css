@@ -270,7 +270,7 @@ hr {
     width: 65vw;
     height: 48.75vw;
     height: auto;
-    /* content: url(rotationImages/1.webp); */
+    content: url(rotationImages/1.webp);
     border: 1px solid rgb(217, 216, 216);
     border-radius: 2%;
     animation: whiteGlow 2.5s ease-in-out infinite;
@@ -751,6 +751,9 @@ ul {
         display: none;
     }
 
+    .about-image { 
+        width: 75.5vw;
+    }
    
 
     .intro {
