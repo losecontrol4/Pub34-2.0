@@ -327,7 +327,7 @@ iframe {
     width: 60vw;
     /* background-color: rgb(43, 42, 42); */
     /* background-image: url(Images/white-waves.webp); */
-    background-image: url(Images/pink-curtain-with-stage-background-vector.webp);
+    background-image: url(Images/pink-curtain-with-stage-background-vector-700.webp);
     background-size: cover;
     padding: 0px;
     justify-content: center;
@@ -770,6 +770,14 @@ ul {
         font-size: 3vw;
     }
 
+    .social-media {
+        width: 8vw;
+    }
+
+    .contact-icons {
+        width: 28vw;
+    }
+    
 
   }
 

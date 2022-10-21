@@ -21,9 +21,9 @@ function prepare() { //sets the values to be viewable inline
   initializeDrop(document.getElementById("contentC"))
 
   imageOne.style.opacity = "100%"
-  imageOne.style.content = "url(rotationImages/1.JPEG)"
+  imageOne.style.content = "url(rotationImages/1.webp)"
   imageTwo.style.opacity = "0%"
-  imageTwo.style.content = "url(rotationImages/2.JPEG)"
+  imageTwo.style.content = "url(rotationImages/2.webp)"
 
 }
 
@@ -51,7 +51,7 @@ function rotateImages() {
 }
 
 function changeImages() { //to be called when rotateImages' transition ends
-  const numFiles = 4 //hard coded because this would be impossible to obtain without a server to the best of my knowledge
+  const numFiles = 4 //hard coded because this would be impossible to obtain without a dedicated server to the best of my knowledge
   let imageOne = document.getElementById("intro-image-1")
   let imageTwo = document.getElementById("intro-image-2")
 
@@ -68,7 +68,7 @@ function changeImages() { //to be called when rotateImages' transition ends
 }
 
 function createPath(number) {
-  return "rotationImages/" + number + ".JPEG"
+  return "rotationImages/" + number + ".webp"
 }
 
 
