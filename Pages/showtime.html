@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../menu_style.css" />
   </head>
   <body ondblclick="openNewTab()" id="body">
-    <img src="../Images/Menus/drinks.jpg" alt="menu page 1" />
+    <img src="../Images/Menus/Showtime.webp" alt="menu page 1" />
 
     <script>
       let lastCall = 0;
@@ -20,7 +20,7 @@
           let curr = new Date().getTime(); //some devices like iphone will call this function with both methods, therefore this prevents the function from being called twice
           let lastCallLength = curr - lastCall;
           if (lastCallLength > 200 || lastCall == 0) {
-            window.open("drinks.html", "_blank");
+            window.open("showtime.html", "_blank");
           }
           lastCall = curr;
         }
