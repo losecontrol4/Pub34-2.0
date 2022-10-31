@@ -702,6 +702,19 @@ ul {
     box-shadow: 0px 0px 10px var(--accent_two);
     
   }
+  #schedule a {
+    margin-top: 2vh;
+    color: var(--accent_one);
+  }
+
+  #schedule a:hover {
+    color: var(--primary);
+  }
+  #schedule a:active {
+    color: var(--white);
+  }
+
+
 
 .agenda {
     display: flex;

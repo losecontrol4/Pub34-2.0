@@ -147,12 +147,7 @@ function checkSideLights() {
   let left = document.getElementById("left-bar").childElementCount
   left = left * (vh(10.77)) //element amount times margin plus height of each light
   let height = (document.getElementById("center")).clientHeight - (document.getElementById("footer")).clientHeight
-  console.log(1)
-  console.log(height + height * .03)
-  console.log(left)
-  console.log(2)
-  console.log(left + .03 * left)
-  console.log(height)
+
   if(height + height * .03 < left || left + left * .03 < height) {
     updateSideLights()
   }
