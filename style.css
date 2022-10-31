@@ -567,7 +567,7 @@ ul {
     align-items: center;
     gap: .5vh;
     padding: 0px;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
 }
 
 
@@ -804,7 +804,10 @@ ul {
     .about-image { 
         width: 75.5vw;
     }
-   
+    
+    .location-hours {
+        padding: 2vh 0vw;
+    }
 
     .intro {
         /* margin-bottom: 3vh; */
