@@ -705,6 +705,7 @@ ul {
   #schedule a {
     margin-top: 2vh;
     color: var(--accent_one);
+    font-family: 'Blanch Condensed', sans-serif;  ;
   }
 
   #schedule a:hover {
