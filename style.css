@@ -10,6 +10,8 @@
     --text_glow_scale: calc(.3vh + .3vw);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @font-face {
     font-family: 'Blanch Condensed';
     font-style: normal;
@@ -705,7 +707,7 @@ ul {
   #schedule a {
     margin-top: 2vh;
     color: var(--accent_one);
-    font-family: 'Blanch Condensed', sans-serif;  ;
+    font-family: 'Open Sans', sans-serif;  ;
   }
 
   #schedule a:hover {
