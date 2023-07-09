@@ -728,6 +728,17 @@ ul {
     display: none;
 }
 
+#event-container {
+    width: 70vw;
+    border: 1px solid var(--accent_two);
+    border-radius: 2%;
+    animation: glow 1.5s ease-in-out infinite;
+    -webkit-animation: glow 1.5s ease-in-out infinite;
+    padding: 2vh 1vw;
+    text-align:left;
+    margin-top: 3vh;
+}
+
 @keyframes whiteGlow {
     0%{box-shadow: 0 0 var(--glow_scale) #fff;}
     50%{box-shadow: 0 0 calc(var(--glow_scale)*4) #fff;}
