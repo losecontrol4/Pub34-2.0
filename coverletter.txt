@@ -1,0 +1,3 @@
+Hi! I'm Adam. I just wanted to add info about a current freelance project I'm working on that provides experience with trading. 
+I built a backend to communicate with the forex connect api and a front end dashboard to open and close positions and view various stats. 
+After providing the dashboard to test everything, I'm now in the process of implementing it all with the client's dashboard.
