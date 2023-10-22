@@ -724,6 +724,10 @@ ul {
 
 }
 
+#events {
+    white-space: pre-wrap;
+}
+
 .calendar {
     display: none;
 }
