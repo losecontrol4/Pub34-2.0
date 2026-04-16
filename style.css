@@ -208,6 +208,10 @@ hr {
     margin-top: .5vh;
 }
 
+.header-left {
+    justify-content: center;
+}
+
 
 
 
@@ -471,19 +475,24 @@ hr {
     /* background-color: var(--tertiary); */
     align-items: center;
     padding: 4vh 0vw;
+
 }
 
 .location-hours {
     background-color: #081210;
-opacity: 0.8;
+        overflow: hidden;
+    background-color: rgba(8, 18, 16, 0.8);
+
 background-image:  linear-gradient(30deg, #0a1613 12%, transparent 12.5%, transparent 87%, #0a1613 87.5%, #0a1613), linear-gradient(150deg, #0a1613 12%, transparent 12.5%, transparent 87%, #0a1613 87.5%, #0a1613), linear-gradient(30deg, #0a1613 12%, transparent 12.5%, transparent 87%, #0a1613 87.5%, #0a1613), linear-gradient(150deg, #0a1613 12%, transparent 12.5%, transparent 87%, #0a1613 87.5%, #0a1613), linear-gradient(60deg, #0a161377 25%, transparent 25.5%, transparent 75%, #0a161377 75%, #0a161377), linear-gradient(60deg, #0a161377 25%, transparent 25.5%, transparent 75%, #0a161377 75%, #0a161377);
 background-size: 20px 35px;
 background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+
 }
 
 .lh-container{
     display: flex;
     justify-content: center;
+    
 }
 
 .location-hours-content{
